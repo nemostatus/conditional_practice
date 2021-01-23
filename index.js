@@ -11,7 +11,7 @@ else if(date.getHours()<16 && date.getHours()>12){
     display.innerHTML = "GOOD AFTERNOON"
 }
 else if(date.getHours()<19 && date.getHours()>16){
-    display.innerHTML = "GOOD AFTERNOON"
+    display.innerHTML = "GOOD EVENING"
 }
 else if(date.getHours()<24 && date.getHours()>19){
     display.innerHTML = "HELLO NIGHT OWL"
