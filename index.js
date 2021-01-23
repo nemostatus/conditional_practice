@@ -17,4 +17,13 @@ else if(date.getHours()<24 && date.getHours()>19){
     display.innerHTML = "HELLO NIGHT OWL"
 }
 }
+//the above function handles the click event, let's work with other events
+
+const hider = () => {
+    console.log("gerf")
+let hide = document.getElementById("hidden")
+
+    hide.innerHTML = "YOU FOUND THE HIDDEN ELEMENT!!"
+
+}
 
