@@ -1,4 +1,4 @@
-document.addEventListener("keypress", cat())
+document.addEventListener("keypress", cat)
 function checkTime(){
     console.log("rfre")
 let date = new Date()
@@ -18,21 +18,19 @@ else if(date.getHours()<24 && date.getHours()>19){
 }
 //the above function handles the click event, let's work with other events
 
-function hider() {
+function hider(event) {
     console.log("gerf")
-let hide = document.getElementById("hidden")
 
-
-    hide.innerHTML = `YOU FOUND THE HIDDEN ELEMENT!!`
+event.innerHTML = `YOU FOUND THE HIDDEN ELEMENT!!`
 
 
 }
 
-function cat()  {
+function cat(event)  {
     console.log("Rgerg")
-    let catt = document.getElementById("cats")
+   
 
-   catt.innerHTML += ` <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="200" ></img>`
+   event.target.innerHTML += ` <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="200" ></img>`
    
 }
 
