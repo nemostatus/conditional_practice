@@ -19,21 +19,15 @@ else {
     display.innerHTML = "HELLO NIGHT OWL"
 }
 }
-//the above function handles the click event, let's work with other events
-
-function hider(event) {
-    console.log("gerf")
-
-event.innerHTML = `YOU FOUND THE HIDDEN ELEMENT!!`
-
-
-}
 
 function cat(event)  {
     console.log("Rgerg")
-   
-
-   event.target.innerHTML += ` <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="200" ></img>`
+    event.target.innerHTML += ` <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="200" ></img>`
    
 }
+function condition(){
+    document.getElementById("testing").innerHTML = "thank you for scrolling over me"
+}
+
+
 
