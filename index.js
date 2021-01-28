@@ -52,6 +52,11 @@ function counter() {
  
 }
 
+function giveName(event){
+event.preventDefault()
+    document.getElementById("named").innerHTML = `Your pet's name is now ${document.getElementById("name").value}`
+}
+
 
 
 //    function inner(){
