@@ -1,5 +1,5 @@
 document.addEventListener("keypress", cat);
-
+let count = 0
 function checkTime(){
     console.log("rfre")
 let date = new Date()
@@ -37,5 +37,28 @@ function changeColor(event){
 function returnColor(event){
     event.target.style.backgroundColor = 'grey'
 }
+
+function counter() {
+   
+      count += 1;
+      console.log(count)
+    document.getElementById("check").innerHTML = count
+  }
+  function counter5() {
+   count += 1;
+   if(count ===5){
+    document.getElementById("miniGame").innerHTML = "YOU WIN"
+   }
+ 
+}
+
+
+
+//    function inner(){
+//     counter++
+//         console.log(counter)}
+//         return inner()
+        
+
 
 
