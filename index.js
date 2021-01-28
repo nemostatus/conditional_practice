@@ -29,5 +29,9 @@ function condition(){
     document.getElementById("testing").innerHTML = "thank you for scrolling over me"
 }
 
+function changeColor(){
+    console.log("gref")
+    document.getElementById("box").style.backgroundColor = 'red'
+}
 
 
