@@ -54,7 +54,7 @@ function counter() {
 
 function giveName(event){
 event.preventDefault()
-    document.getElementById("named").innerHTML = `Your pet's name is now ${document.getElementById("name").value}`
+    document.getElementById("title").innerHTML = `<h2> ${document.getElementById("name").value}</h2>`
 }
 
 
