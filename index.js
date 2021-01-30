@@ -61,38 +61,58 @@ event.preventDefault()
 function feedCat(){
     feedCount++
     if(feedCount ===1){
-        document.getElementById("fed").innerHTML = `Thank you for feeding me :)`
+        document.getElementById("fed").innerHTML = `<h3>Thank you for feeding me :)<h3>`
     }
     else if(feedCount ===2){
-        document.getElementById("fed").innerHTML = `Thank you I'm getting quite full now :/`
+        document.getElementById("fed").innerHTML = `<h3>Thank you I'm getting quite full now :/<h3>`
     }
     else if(feedCount ===3){
-        document.getElementById("fed").innerHTML = `I'm like a fish, if you keep feeding me, I will eat, be careful :(`
+        document.getElementById("fed").innerHTML = `<h3>I'm like a fish, if you keep feeding me, I will eat, be careful :(<h3>`
     }
     else if(feedCount === 4){
         document.getElementById("pic").innerHTML = `<img src=  "https://cdn.pixabay.com/photo/2017/02/18/18/09/skull-and-crossbones-2077840_960_720.jpg" width="200">`
         document.getElementById("title").innerHTML = `<h2>RIP<h2>`
-        document.getElementById("fed").innerHTML = `I told you.`
+        document.getElementById("fed").innerHTML = `<h1>I told you.<h1>
+        <button id="revive"onclick ="revive()">PAY 100k to the Vet </button> `
+        document.getElementById("watered").remove()
+        document.getElementById("feed").remove()
+        document.getElementById("water").remove()
+        document.getElementById("form").remove()
     }
 }
 
 function waterCat(){
     waterCount++
     if(waterCount ===1){
-        document.getElementById("watered").innerHTML = `Thank you for giving me water :)`
+        document.getElementById("watered").innerHTML = `<h3>Thank you for giving me water :)<h3>`
     }
     else if(waterCount ===2){
-        document.getElementById("watered").innerHTML = `My thirst is more than quenched :/`
+        document.getElementById("watered").innerHTML = `<h3>My thirst is more than quenched :/<h3>`
     }
     else if(waterCount ===3){
-        document.getElementById("watered").innerHTML = `Are you trying to drown me? :(`
+        document.getElementById("watered").innerHTML = `<h3>Are you trying to drown me? :(<h3>`
     }
     else if(waterCount === 4){
         document.getElementById("pic").innerHTML = `<img src=  "https://cdn.pixabay.com/photo/2017/02/18/18/09/skull-and-crossbones-2077840_960_720.jpg" width="200">`
         document.getElementById("title").innerHTML = `<h2>RIP<h2>`
-        document.getElementById("fed").innerHTML = `I told you.`
+        document.getElementById("watered").innerHTML = `<h1>I told you.<h1> 
+        <button id="revive" onclick ="revive()">PAY 100k to the Vet</button> `
+        document.getElementById("fed").remove()
+        document.getElementById("feed").remove()
+        document.getElementById("water").remove()
     }
 }
+
+function revive(){
+    document.getElementById("pic").innerHTML = `<img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="200" ></img>`
+    document.getElementById("revive").remove()
+    document.getElementById("title").innerHTML = `<h2>ZOMBIE PET<h2>`
+    // document.getElementById("watered").innerHTML.remove()
+    // document.getElementById("fed").innerHTML.remove()
+    feedCount = 0
+    waterCount = 0
+}
+//once = to 4  remove other message, remove buttons, add take to vet button
 
 //    function inner(){
 //     counter++
