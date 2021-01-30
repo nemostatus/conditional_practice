@@ -63,10 +63,25 @@ function feedCat(){
     if(feedCount ===1){
         document.getElementById("fed").innerHTML = `Thank you for feeding me :)`
     }
+    else if(feedCount ===2){
+        document.getElementById("fed").innerHTML = `Thank you I'm getting quite full now :/`
+    }
+    else if(feedCount ===3){
+        document.getElementById("fed").innerHTML = `I'm like a fish, if you keep feeding me, I will eat, be careful :(`
+    }
 }
 
 function waterCat(){
-    
+    waterCount++
+    if(waterCount ===1){
+        document.getElementById("watered").innerHTML = `Thank you for giving me water :)`
+    }
+    else if(waterCount ===2){
+        document.getElementById("watered").innerHTML = `My thirst is more than quenched :/`
+    }
+    else if(waterCount ===3){
+        document.getElementById("watered").innerHTML = `Are you trying to drown me? :(`
+    }
 }
 
 //    function inner(){
