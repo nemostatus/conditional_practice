@@ -1,6 +1,8 @@
 // document.addEventListener("keypress", cat);
- let feedCount = 0
- let waterCount = 0
+ let feedCount 
+ let waterCount 
+ feedCount = 0
+ waterCount = 0
 // function checkTime(){
 //     console.log("rfre")
 // let date = new Date()
@@ -109,8 +111,13 @@ function revive(){
     document.getElementById("title").innerHTML = `<h2>ZOMBIE PET<h2>`
     // document.getElementById("watered").innerHTML.remove()
     // document.getElementById("fed").innerHTML.remove()
+   if(document.getElementById("watered").remove() != null){
+    document.getElementById("watered").remove()}
+    else{
+        document.getElementById("fed").remove()
+    }
     feedCount = 0
-    waterCount = 0
+  waterCount = 0
 }
 //once = to 4  remove other message, remove buttons, add take to vet button
 
