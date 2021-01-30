@@ -69,6 +69,11 @@ function feedCat(){
     else if(feedCount ===3){
         document.getElementById("fed").innerHTML = `I'm like a fish, if you keep feeding me, I will eat, be careful :(`
     }
+    else if(feedCount === 4){
+        document.getElementById("pic").innerHTML = `<img src=  "https://cdn.pixabay.com/photo/2017/02/18/18/09/skull-and-crossbones-2077840_960_720.jpg" width="200">`
+        document.getElementById("title").innerHTML = `<h2>RIP<h2>`
+        document.getElementById("fed").innerHTML = `I told you.`
+    }
 }
 
 function waterCat(){
@@ -81,6 +86,11 @@ function waterCat(){
     }
     else if(waterCount ===3){
         document.getElementById("watered").innerHTML = `Are you trying to drown me? :(`
+    }
+    else if(waterCount === 4){
+        document.getElementById("pic").innerHTML = `<img src=  "https://cdn.pixabay.com/photo/2017/02/18/18/09/skull-and-crossbones-2077840_960_720.jpg" width="200">`
+        document.getElementById("title").innerHTML = `<h2>RIP<h2>`
+        document.getElementById("fed").innerHTML = `I told you.`
     }
 }
 
