@@ -54,6 +54,20 @@
 //    }
  
 // }
+function dogPic(){
+
+}
+
+function catPic(){
+    //<img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="200" ></img>
+}
+
+function birdPic(){
+    //add birdpic, remove other buttons
+    //add feed buttons
+    //staart with changinf pic
+    document.getElementById("pic").innerHTML = `<img src= "https://images.pexels.com/photos/2662434/pexels-photo-2662434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"`
+}
 
 function giveName(event){
 event.preventDefault()
@@ -105,20 +119,20 @@ function waterCat(){
     }
 }
 
-function revive(){
-    document.getElementById("pic").innerHTML = `<img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="200" ></img>`
-    document.getElementById("revive").remove()
-    document.getElementById("title").innerHTML = `<h2>ZOMBIE PET<h2>`
-    // document.getElementById("watered").innerHTML.remove()
-    // document.getElementById("fed").innerHTML.remove()
-   if(document.getElementById("watered").remove() != null){
-    document.getElementById("watered").remove()}
-    else{
-        document.getElementById("fed").remove()
-    }
-    feedCount = 0
-  waterCount = 0
-}
+// function revive(){
+//     document.getElementById("pic").innerHTML = `<img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="200" ></img>`
+//     document.getElementById("revive").remove()
+//     document.getElementById("title").innerHTML = `<h2>ZOMBIE PET<h2>`
+//     // document.getElementById("watered").innerHTML.remove()
+//     // document.getElementById("fed").innerHTML.remove()
+//    if(document.getElementById("watered").remove() != null){
+//     document.getElementById("watered").remove()}
+//     else{
+//         document.getElementById("fed").remove()
+//     }
+//     feedCount = 0
+//   waterCount = 0
+// }
 //once = to 4  remove other message, remove buttons, add take to vet button
 
 //    function inner(){
