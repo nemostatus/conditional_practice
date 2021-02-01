@@ -52,15 +52,31 @@
 //    }
  
 // }
-// function dogPic(){
-
-// }
-
-// function catPic(){
-//     //<img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="200" ></img>
-// }
 let feedCount= 0
  let waterCount = 0
+function dogPic(){
+    document.getElementById("virtualPet").innerHTML =
+    `<h1>Hey there, here is your pet, what will you name it?</h1>
+    <div id = "title"> </div>
+    <div id= "pic"><img src= "https://images.pexels.com/photos/2820134/pexels-photo-2820134.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="200"></div>
+    <form onSubmit ="giveName(event)" id="form">
+        <label>Name:</label>
+        <input id="name" type = "text">
+        <input type ="submit">
+    </form>`
+    document.getElementById("feedSys").innerHTML =`
+    <button id="feed"  onclick ="feedCat()">Feed</button>
+    <button id="water" onclick = "waterCat()">Give Water</button>
+    <div id = "watered"></div>
+    <div id = "fed"></div>`
+     feedCount= 0
+      waterCount = 0
+}
+
+function catPic(){
+    //<img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="200" ></img>
+}
+
 
 function birdPic(){
     //add birdpic, remove other buttons
@@ -81,6 +97,8 @@ function birdPic(){
     <button id="water" onclick = "waterCat()">Give Water</button>
     <div id = "watered"></div>
     <div id = "fed"></div>`
+    feedCount= 0
+      waterCount = 0
 }
 
 function giveName(event){
