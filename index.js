@@ -74,6 +74,23 @@ function dogPic(){
 }
 
 function catPic(){
+       
+    document.getElementById("virtualPet").innerHTML =
+    `<h1>Hey there, here is your pet, what will you name it?</h1>
+    <div id = "title"> </div>
+    <div id= "pic"> <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="200" ></img>
+    <form onSubmit ="giveName(event)" id="form">
+        <label>Name:</label>
+        <input id="name" type = "text">
+        <input type ="submit">
+    </form>`
+    document.getElementById("feedSys").innerHTML =`
+    <button id="feed"  onclick ="feedCat()">Feed</button>
+    <button id="water" onclick = "waterCat()">Give Water</button>
+    <div id = "watered"></div>
+    <div id = "fed"></div>`
+    feedCount= 0
+      waterCount = 0
     //<img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="200" ></img>
 }
 
@@ -144,7 +161,7 @@ function waterCat(){
         document.getElementById("pic").innerHTML = `<img src=  "https://cdn.pixabay.com/photo/2017/02/18/18/09/skull-and-crossbones-2077840_960_720.jpg" width="200">`
         document.getElementById("title").innerHTML = `<h2>RIP<h2>`
         document.getElementById("watered").innerHTML = `<h1>I told you.<h1> 
-        <button id="revive" onclick ="revive()">PAY 100k to the Vet</button> `
+        `
         document.getElementById("fed").remove()
         document.getElementById("feed").remove()
         document.getElementById("water").remove()
