@@ -138,7 +138,7 @@ function feedCat(){
         document.getElementById("pic").innerHTML = `<img src=  "https://cdn.pixabay.com/photo/2017/02/18/18/09/skull-and-crossbones-2077840_960_720.jpg" width="200">`
         document.getElementById("title").innerHTML = `<h2>RIP<h2>`
         document.getElementById("fed").innerHTML = `<h1>I told you.<h1>
-        <button id="revive"onclick ="revive()">PAY 100k to the Vet </button> `
+       `
         document.getElementById("watered").remove()
         document.getElementById("feed").remove()
         document.getElementById("water").remove()
